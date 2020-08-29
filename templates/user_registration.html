@@ -95,7 +95,7 @@
           <center>
 
             <video id="player" controls autoplay></video>
-            <canvas id="canvas" width=0 height=0></canvas>
+            <canvas id="canvas" width=300 height=150></canvas>
             <div>
               <button type="button" id="capture" name="button" class="btn btn-primary">Capture</button>
               <button type="submit" class="btn btn-primary" required>Register</button>
@@ -116,7 +116,8 @@
                 context.drawImage(player, 0, 0, canvas.width, canvas.height);
                 var image = canvas.toDataURL("image/png");
                 console.log( image );
-                window.open(image, '_blank');
+                 console.log( image );
+                window.open('http://127.0.0.1:5000/user_login');
 
                   // var image = canvas.toDataURL(); 
                 // var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
